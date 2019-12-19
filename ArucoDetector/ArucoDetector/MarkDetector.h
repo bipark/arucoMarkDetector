@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MarkDetector : NSObject
 
 + (NSString *) openCVVersionString;
++ (NSDictionary *) findMark:(UIImage *) source;
+
 
 @end
 

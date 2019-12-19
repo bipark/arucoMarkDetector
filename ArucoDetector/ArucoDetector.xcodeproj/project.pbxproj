@@ -21,6 +21,7 @@
 		9F5BF35623AB1F1C00FF4AD7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5BF35523AB1F1C00FF4AD7 /* Accelerate.framework */; };
 		9F5BF35F23AB307000FF4AD7 /* MarkDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BF35E23AB307000FF4AD7 /* MarkDetector.mm */; };
 		9F5BF36323AB343800FF4AD7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5BF36223AB343800FF4AD7 /* opencv2.framework */; };
+		9F5BF36623AB4C5500FF4AD7 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BF36523AB4C5500FF4AD7 /* UIImage+Resize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		9F5BF35E23AB307000FF4AD7 /* MarkDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MarkDetector.mm; sourceTree = "<group>"; };
 		9F5BF36223AB343800FF4AD7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../ios_opencv/opencv2.framework; sourceTree = "<group>"; };
 		9F5BF36423AB34A000FF4AD7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		9F5BF36523AB4C5500FF4AD7 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				9F5BF35E23AB307000FF4AD7 /* MarkDetector.mm */,
 				9F5BF35C23AB306F00FF4AD7 /* ArucoDetector-Bridging-Header.h */,
 				9F5BF36423AB34A000FF4AD7 /* PrefixHeader.pch */,
+				9F5BF36523AB4C5500FF4AD7 /* UIImage+Resize.swift */,
 			);
 			path = ArucoDetector;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				9F5BF35F23AB307000FF4AD7 /* MarkDetector.mm in Sources */,
 				9F5BF33B23AB1D1A00FF4AD7 /* ViewController.swift in Sources */,
 				9F5BF33723AB1D1A00FF4AD7 /* AppDelegate.swift in Sources */,
+				9F5BF36623AB4C5500FF4AD7 /* UIImage+Resize.swift in Sources */,
 				9F5BF33923AB1D1A00FF4AD7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
