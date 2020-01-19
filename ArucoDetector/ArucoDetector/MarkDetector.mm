@@ -35,16 +35,18 @@
     for (int i=cv::aruco::DICT_4X4_50; i !=cv::aruco::DICT_ARUCO_ORIGINAL; i++) {
         dict = cv::aruco::getPredefinedDictionary(i);
         cv::aruco::detectMarkers(srcMat, dict, markerCorners, markerIds);
+
         if (markerIds.size() > 0 && markerCorners.size() > 0) {
+            cv::cvtColor(srcMat, returnMat, cv::COLOR_GRAY2BGR);
+            cv::aruco::drawDetectedMarkers(returnMat, markerCorners, markerIds);
+
+            std::cout << markerIds.size() << std::endl;
+            std::cout << markerCorners.size() << std::endl;
             found = true;
-            break;
         }
     }
     
     if (found) {
-        cv::cvtColor(srcMat, returnMat, cv::COLOR_GRAY2BGR);
-        cv::aruco::drawDetectedMarkers(returnMat, markerCorners, markerIds);
-        
         retdic = @{
             @"process": @0,
             @"image": MatToUIImage(returnMat)

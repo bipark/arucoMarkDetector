@@ -37,6 +37,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
         let resized = UIImage.scale(image: image, by: 0.5)
         let retVal = MarkDetector.findMark(resized!)
+        print(retVal)
         
         if (retVal["process"] as! Int == 0) {
             self.imageView.image = (retVal["image"] as? UIImage)!
@@ -58,7 +59,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     
     @IBAction func albumAction(_ sender: Any) {
         let vc = UIImagePickerController()
-        vc.sourceType = .savedPhotosAlbum
+        vc.sourceType = .photoLibrary
         vc.delegate = self
         present(vc, animated: true)
     }

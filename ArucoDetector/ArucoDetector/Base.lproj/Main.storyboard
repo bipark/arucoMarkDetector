@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QSz-Ue-BsO">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Aw8-6Y-RrF">
+            <objects>
+                <navigationController id="QSz-Ue-BsO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rR5-Ia-D8z">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MYd-5Z-wAA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OVR-wD-Xef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-693" y="121"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -15,25 +31,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="edH-dN-1GG">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="ArUco Mark Detector" id="CRj-Ge-rlK">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" image="photo" catalog="system" id="4UH-FK-ubK">
-                                            <connections>
-                                                <action selector="albumAction:" destination="BYZ-38-t0r" id="dpi-jV-0Vi"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Camera" image="camera" catalog="system" id="R8k-YP-aKf">
-                                            <connections>
-                                                <action selector="cameraAction:" destination="BYZ-38-t0r" id="5Jw-v3-FOP"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMD-c5-nH6">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iMD-c5-nH6">
                                 <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <barButtonItem title="Item" id="GnG-S4-Wq0"/>
                                 </items>
@@ -52,19 +52,25 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="edH-dN-1GG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6xI-54-a0M"/>
-                            <constraint firstItem="ufp-vF-2Mk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L7K-3B-8OT"/>
-                            <constraint firstItem="edH-dN-1GG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Pvc-sZ-oX4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ufp-vF-2Mk" secondAttribute="bottom" constant="44" id="UA6-S5-GRC"/>
-                            <constraint firstItem="edH-dN-1GG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aPA-sE-Rwi"/>
-                            <constraint firstItem="iMD-c5-nH6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bk0-8W-vHB"/>
-                            <constraint firstItem="ufp-vF-2Mk" firstAttribute="top" secondItem="edH-dN-1GG" secondAttribute="bottom" symbolic="YES" id="dE7-gI-QeN"/>
-                            <constraint firstItem="iMD-c5-nH6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dM9-q6-76J"/>
-                            <constraint firstItem="iMD-c5-nH6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dbU-m9-6m1"/>
-                            <constraint firstItem="ufp-vF-2Mk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eqZ-oT-0cd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ufp-vF-2Mk" secondAttribute="bottom" constant="44" id="4rn-qd-Lwk"/>
+                            <constraint firstItem="ufp-vF-2Mk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JUg-zx-cgs"/>
+                            <constraint firstItem="ufp-vF-2Mk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ayJ-xO-UdT"/>
+                            <constraint firstItem="ufp-vF-2Mk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ul0-Ex-h4B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="PKk-VE-2XS">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="photo" catalog="system" id="4UH-FK-ubK">
+                            <connections>
+                                <action selector="albumAction:" destination="BYZ-38-t0r" id="dpi-jV-0Vi"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Camera" image="camera" catalog="system" id="R8k-YP-aKf">
+                            <connections>
+                                <action selector="cameraAction:" destination="BYZ-38-t0r" id="5Jw-v3-FOP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageView" destination="Y7b-Di-Awi" id="8aO-jk-QPF"/>
                         <outlet property="scrollView" destination="ufp-vF-2Mk" id="YCO-cM-YC5"/>
