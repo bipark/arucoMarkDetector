@@ -21,7 +21,6 @@
 		9F5BF35F23AB307000FF4AD7 /* MarkDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BF35E23AB307000FF4AD7 /* MarkDetector.mm */; };
 		9F5BF36323AB343800FF4AD7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5BF36223AB343800FF4AD7 /* opencv2.framework */; };
 		9F5BF36623AB4C5500FF4AD7 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BF36523AB4C5500FF4AD7 /* UIImage+Resize.swift */; };
-		9F685B9823D599490041AAFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F685B9723D599490041AAFB /* SceneDelegate.swift */; };
 		9F97625723D58500003996DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F97625623D58500003996DC /* GoogleService-Info.plist */; };
 		DD5C8EFA818AB7190618DF5E /* Pods_ArucoDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85864FDD645367A2430AEAB5 /* Pods_ArucoDetector.framework */; };
 /* End PBXBuildFile section */
@@ -49,7 +48,6 @@
 		9F5BF36223AB343800FF4AD7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../ios_opencv/opencv2.framework; sourceTree = "<group>"; };
 		9F5BF36423AB34A000FF4AD7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9F5BF36523AB4C5500FF4AD7 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
-		9F685B9723D599490041AAFB /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9F97625623D58500003996DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				9F5BF33623AB1D1A00FF4AD7 /* AppDelegate.swift */,
-				9F685B9723D599490041AAFB /* SceneDelegate.swift */,
 				9F5BF33A23AB1D1A00FF4AD7 /* ViewController.swift */,
 				9F5BF33C23AB1D1A00FF4AD7 /* Main.storyboard */,
 				9F5BF33F23AB1D1D00FF4AD7 /* Assets.xcassets */,
@@ -251,7 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F685B9823D599490041AAFB /* SceneDelegate.swift in Sources */,
 				9F5BF35F23AB307000FF4AD7 /* MarkDetector.mm in Sources */,
 				9F5BF33B23AB1D1A00FF4AD7 /* ViewController.swift in Sources */,
 				9F5BF33723AB1D1A00FF4AD7 /* AppDelegate.swift in Sources */,
@@ -414,7 +410,7 @@
 					../../ios_opencv,
 				);
 				INFOPLIST_FILE = ArucoDetector/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,7 +445,7 @@
 					../../ios_opencv,
 				);
 				INFOPLIST_FILE = ArucoDetector/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
