@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9F5BF33723AB1D1A00FF4AD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BF33623AB1D1A00FF4AD7 /* AppDelegate.swift */; };
-		9F5BF33923AB1D1A00FF4AD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BF33823AB1D1A00FF4AD7 /* SceneDelegate.swift */; };
 		9F5BF33B23AB1D1A00FF4AD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BF33A23AB1D1A00FF4AD7 /* ViewController.swift */; };
 		9F5BF33E23AB1D1A00FF4AD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F5BF33C23AB1D1A00FF4AD7 /* Main.storyboard */; };
 		9F5BF34023AB1D1D00FF4AD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5BF33F23AB1D1D00FF4AD7 /* Assets.xcassets */; };
@@ -22,12 +21,17 @@
 		9F5BF35F23AB307000FF4AD7 /* MarkDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BF35E23AB307000FF4AD7 /* MarkDetector.mm */; };
 		9F5BF36323AB343800FF4AD7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F5BF36223AB343800FF4AD7 /* opencv2.framework */; };
 		9F5BF36623AB4C5500FF4AD7 /* UIImage+Resize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5BF36523AB4C5500FF4AD7 /* UIImage+Resize.swift */; };
+		9F685B9823D599490041AAFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F685B9723D599490041AAFB /* SceneDelegate.swift */; };
+		9F97625723D58500003996DC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F97625623D58500003996DC /* GoogleService-Info.plist */; };
+		DD5C8EFA818AB7190618DF5E /* Pods_ArucoDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85864FDD645367A2430AEAB5 /* Pods_ArucoDetector.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9F5BF33323AB1D1A00FF4AD7 /* ArucoDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArucoDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17E7304B7C148462FAD2644B /* Pods-ArucoDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArucoDetector.debug.xcconfig"; path = "Target Support Files/Pods-ArucoDetector/Pods-ArucoDetector.debug.xcconfig"; sourceTree = "<group>"; };
+		72E36D383872CEADC07039A9 /* Pods-ArucoDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArucoDetector.release.xcconfig"; path = "Target Support Files/Pods-ArucoDetector/Pods-ArucoDetector.release.xcconfig"; sourceTree = "<group>"; };
+		85864FDD645367A2430AEAB5 /* Pods_ArucoDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArucoDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5BF33323AB1D1A00FF4AD7 /* AruCo Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AruCo Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5BF33623AB1D1A00FF4AD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F5BF33823AB1D1A00FF4AD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9F5BF33A23AB1D1A00FF4AD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F5BF33D23AB1D1A00FF4AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F5BF33F23AB1D1D00FF4AD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +49,8 @@
 		9F5BF36223AB343800FF4AD7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../ios_opencv/opencv2.framework; sourceTree = "<group>"; };
 		9F5BF36423AB34A000FF4AD7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9F5BF36523AB4C5500FF4AD7 /* UIImage+Resize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Resize.swift"; sourceTree = "<group>"; };
+		9F685B9723D599490041AAFB /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9F97625623D58500003996DC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 				9F5BF35623AB1F1C00FF4AD7 /* Accelerate.framework in Frameworks */,
 				9F5BF34C23AB1EE800FF4AD7 /* AVFoundation.framework in Frameworks */,
 				9F5BF35423AB1F1400FF4AD7 /* AssetsLibrary.framework in Frameworks */,
+				DD5C8EFA818AB7190618DF5E /* Pods_ArucoDetector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,13 +78,14 @@
 				9F5BF33523AB1D1A00FF4AD7 /* ArucoDetector */,
 				9F5BF33423AB1D1A00FF4AD7 /* Products */,
 				9F5BF34A23AB1EE800FF4AD7 /* Frameworks */,
+				A323DA554B7E7AD52F899497 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		9F5BF33423AB1D1A00FF4AD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F5BF33323AB1D1A00FF4AD7 /* ArucoDetector.app */,
+				9F5BF33323AB1D1A00FF4AD7 /* AruCo Reader.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				9F5BF33623AB1D1A00FF4AD7 /* AppDelegate.swift */,
-				9F5BF33823AB1D1A00FF4AD7 /* SceneDelegate.swift */,
+				9F685B9723D599490041AAFB /* SceneDelegate.swift */,
 				9F5BF33A23AB1D1A00FF4AD7 /* ViewController.swift */,
 				9F5BF33C23AB1D1A00FF4AD7 /* Main.storyboard */,
 				9F5BF33F23AB1D1D00FF4AD7 /* Assets.xcassets */,
@@ -97,6 +105,7 @@
 				9F5BF35C23AB306F00FF4AD7 /* ArucoDetector-Bridging-Header.h */,
 				9F5BF36423AB34A000FF4AD7 /* PrefixHeader.pch */,
 				9F5BF36523AB4C5500FF4AD7 /* UIImage+Resize.swift */,
+				9F97625623D58500003996DC /* GoogleService-Info.plist */,
 			);
 			path = ArucoDetector;
 			sourceTree = "<group>";
@@ -111,8 +120,18 @@
 				9F5BF34F23AB1F0100FF4AD7 /* CoreMedia.framework */,
 				9F5BF34D23AB1EF900FF4AD7 /* CoreFoundation.framework */,
 				9F5BF34B23AB1EE800FF4AD7 /* AVFoundation.framework */,
+				85864FDD645367A2430AEAB5 /* Pods_ArucoDetector.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A323DA554B7E7AD52F899497 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17E7304B7C148462FAD2644B /* Pods-ArucoDetector.debug.xcconfig */,
+				72E36D383872CEADC07039A9 /* Pods-ArucoDetector.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +141,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F5BF34723AB1D1D00FF4AD7 /* Build configuration list for PBXNativeTarget "ArucoDetector" */;
 			buildPhases = (
+				605FF9CC059107FED2235477 /* [CP] Check Pods Manifest.lock */,
 				9F5BF32F23AB1D1A00FF4AD7 /* Sources */,
 				9F5BF33023AB1D1A00FF4AD7 /* Frameworks */,
 				9F5BF33123AB1D1A00FF4AD7 /* Resources */,
+				22A649E97193C7100E2E3C4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,7 +153,7 @@
 			);
 			name = ArucoDetector;
 			productName = ArucoDetector;
-			productReference = 9F5BF33323AB1D1A00FF4AD7 /* ArucoDetector.app */;
+			productReference = 9F5BF33323AB1D1A00FF4AD7 /* AruCo Reader.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -175,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F5BF34323AB1D1D00FF4AD7 /* LaunchScreen.storyboard in Resources */,
+				9F97625723D58500003996DC /* GoogleService-Info.plist in Resources */,
 				9F5BF34023AB1D1D00FF4AD7 /* Assets.xcassets in Resources */,
 				9F5BF33E23AB1D1A00FF4AD7 /* Main.storyboard in Resources */,
 			);
@@ -182,16 +204,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22A649E97193C7100E2E3C4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArucoDetector/Pods-ArucoDetector-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ArucoDetector/Pods-ArucoDetector-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ArucoDetector/Pods-ArucoDetector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		605FF9CC059107FED2235477 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ArucoDetector-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F5BF32F23AB1D1A00FF4AD7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F685B9823D599490041AAFB /* SceneDelegate.swift in Sources */,
 				9F5BF35F23AB307000FF4AD7 /* MarkDetector.mm in Sources */,
 				9F5BF33B23AB1D1A00FF4AD7 /* ViewController.swift in Sources */,
 				9F5BF33723AB1D1A00FF4AD7 /* AppDelegate.swift in Sources */,
 				9F5BF36623AB4C5500FF4AD7 /* UIImage+Resize.swift in Sources */,
-				9F5BF33923AB1D1A00FF4AD7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,14 +397,22 @@
 		};
 		9F5BF34823AB1D1D00FF4AD7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17E7304B7C148462FAD2644B /* Pods-ArucoDetector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W9324F4M6V;
-				FRAMEWORK_SEARCH_PATHS = ../../ios_opencv;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					../../ios_opencv,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ArucoDetector/PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = ../../ios_opencv;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					../../ios_opencv,
+				);
 				INFOPLIST_FILE = ArucoDetector/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -348,8 +420,9 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtlink.ArucoDetector;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "AruCo Reader";
 				SWIFT_OBJC_BRIDGING_HEADER = "ArucoDetector/ArucoDetector-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -359,14 +432,22 @@
 		};
 		9F5BF34923AB1D1D00FF4AD7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72E36D383872CEADC07039A9 /* Pods-ArucoDetector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W9324F4M6V;
-				FRAMEWORK_SEARCH_PATHS = ../../ios_opencv;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					../../ios_opencv,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ArucoDetector/PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = ../../ios_opencv;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					../../ios_opencv,
+				);
 				INFOPLIST_FILE = ArucoDetector/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -374,8 +455,9 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtlink.ArucoDetector;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "AruCo Reader";
 				SWIFT_OBJC_BRIDGING_HEADER = "ArucoDetector/ArucoDetector-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

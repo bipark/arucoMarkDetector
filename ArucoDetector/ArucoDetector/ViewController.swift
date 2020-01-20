@@ -13,9 +13,14 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var imageView: UIImageView!
     
+    var deviceID = UIDevice.current.identifierForVendor?.uuidString
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("\(MarkDetector.openCVVersionString())")
+        #if DEBUG
+            print("\(MarkDetector.openCVVersionString())")
+            print(self.deviceID!)
+        #endif
         
         self.scrollView.minimumZoomScale = 1.0
         self.scrollView.maximumZoomScale = 10.0
