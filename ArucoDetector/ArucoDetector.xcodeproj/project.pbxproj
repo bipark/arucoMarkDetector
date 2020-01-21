@@ -29,7 +29,7 @@
 		17E7304B7C148462FAD2644B /* Pods-ArucoDetector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArucoDetector.debug.xcconfig"; path = "Target Support Files/Pods-ArucoDetector/Pods-ArucoDetector.debug.xcconfig"; sourceTree = "<group>"; };
 		72E36D383872CEADC07039A9 /* Pods-ArucoDetector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArucoDetector.release.xcconfig"; path = "Target Support Files/Pods-ArucoDetector/Pods-ArucoDetector.release.xcconfig"; sourceTree = "<group>"; };
 		85864FDD645367A2430AEAB5 /* Pods_ArucoDetector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArucoDetector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9F5BF33323AB1D1A00FF4AD7 /* AruCo Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AruCo Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F5BF33323AB1D1A00FF4AD7 /* ArUco Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ArUco Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5BF33623AB1D1A00FF4AD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F5BF33A23AB1D1A00FF4AD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F5BF33D23AB1D1A00FF4AD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		9F5BF33423AB1D1A00FF4AD7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9F5BF33323AB1D1A00FF4AD7 /* AruCo Reader.app */,
+				9F5BF33323AB1D1A00FF4AD7 /* ArUco Reader.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 			);
 			name = ArucoDetector;
 			productName = ArucoDetector;
-			productReference = 9F5BF33323AB1D1A00FF4AD7 /* AruCo Reader.app */;
+			productReference = 9F5BF33323AB1D1A00FF4AD7 /* ArUco Reader.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -418,7 +418,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtlink.ArucoDetector;
-				PRODUCT_NAME = "AruCo Reader";
+				PRODUCT_NAME = "ArUco Reader";
 				SWIFT_OBJC_BRIDGING_HEADER = "ArucoDetector/ArucoDetector-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -453,7 +453,7 @@
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtlink.ArucoDetector;
-				PRODUCT_NAME = "AruCo Reader";
+				PRODUCT_NAME = "ArUco Reader";
 				SWIFT_OBJC_BRIDGING_HEADER = "ArucoDetector/ArucoDetector-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

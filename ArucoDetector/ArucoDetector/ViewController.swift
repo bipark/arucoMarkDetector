@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import LKAlertController
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UIScrollViewDelegate {
 
@@ -14,6 +16,8 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
     @IBOutlet weak var imageView: UIImageView!
     
     var deviceID = UIDevice.current.identifierForVendor?.uuidString
+    let userid = "rtlink@hanmail.net"
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,9 +56,21 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
             self.present(alert, animated: true)
         }
 
-
     }
-
+    
+    @IBAction func saveAction(_ sender: Any) {
+        Alert(title: "Save", message: "Save Image")
+            .addAction("OK", style: .default, handler: { _ in
+                self.saveImageAndSendData()
+            })
+            .addAction("Cancel")
+            .show(animated: true)
+    }
+    
+    @IBAction func listAction(_ sender: Any) {
+        
+    }
+    
     @IBAction func cameraAction(_ sender: Any) {
         let vc = UIImagePickerController()
         vc.sourceType = .camera
@@ -67,6 +83,37 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         vc.sourceType = .photoLibrary
         vc.delegate = self
         present(vc, animated: true)
+    }
+    
+    private func saveImageAndSendData() {
+
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMdd-HHmmss"
+        let filedate = formatter.string(from: Date())
+
+        do {
+            let docUrl = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
+            let fileName = docUrl?.appendingPathComponent("\(filedate).png")
+            if let imageData = self.imageView.image!.pngData() {
+                print(fileName!)
+                try imageData.write(to: fileName!, options: .atomic)
+
+                Firestore.firestore().collection("aruco").addDocument(data:[
+                    "device": self.deviceID!,
+                    "filename": fileName?.absoluteString as Any
+                ]) { err in
+                    if let err = err {
+                        print("Error adding document: \(err)")
+                    } else {
+                        print("Document add OK")
+                    }
+                }
+
+            }
+        } catch {
+            print("Save Fail!")
+        }
+
     }
 }
 

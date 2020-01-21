@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9F5BF33223AB1D1A00FF4AD7"
-               BuildableName = "ArucoDetector.app"
+               BuildableName = "ArUco Reader.app"
                BlueprintName = "ArucoDetector"
                ReferencedContainer = "container:ArucoDetector.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9F5BF33223AB1D1A00FF4AD7"
-            BuildableName = "ArucoDetector.app"
+            BuildableName = "ArUco Reader.app"
             BlueprintName = "ArucoDetector"
             ReferencedContainer = "container:ArucoDetector.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9F5BF33223AB1D1A00FF4AD7"
-            BuildableName = "ArucoDetector.app"
+            BuildableName = "ArUco Reader.app"
             BlueprintName = "ArucoDetector"
             ReferencedContainer = "container:ArucoDetector.xcodeproj">
          </BuildableReference>
